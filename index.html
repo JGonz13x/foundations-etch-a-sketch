@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation-header">
+        <h1 class="project-title">Etch a Sketch</h1>
+        <span
+          ><a
+            href="https://github.com/JGonz13x"
+            class="author-link"
+            target="_blank"
+            rel="noopener"
+            >myGithub</a
+          ></span
+        >
+      </nav>
+    </header>
+
+    <section class="content-container">
+      <div class="controls">
+        <div class="adjust-grid-size">
+          Size:
+          <input
+            type="number"
+            name="Grid Size Number"
+            title="Adjust the Canvas Grid size"
+            class="input-size"
+            value="16"
+            max="100"
+            min="2"
+            onchange="changePixelSize(this.value)"
+          />
+          <input
+            type="range"
+            name="Grid Size Slider"
+            title="Adjust the Canvas Grid size"
+            class="slide-value"
+            min="2"
+            max="100"
+            value="16"
+            onchange="changePixelSize(this.value)"
+          />
+        </div>
+        <div class="toggle-color">
+          <button class="select-rainbow">Rainbow</button>
+          <button class="select-black">Black</button>
+        </div>
+        <div class="remove-canvas-content">
+          <button class="erase-canvas">Erase</button>
+          <button class="clear-canvas">Clear</button>
+        </div>
+      </div>
+      <div class="canvas"></div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
